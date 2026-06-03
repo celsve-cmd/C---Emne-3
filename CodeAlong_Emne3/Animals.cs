@@ -7,6 +7,15 @@ namespace CodeAlong_Emne3
 {
     internal class Animals
     {
+        private void PrintAnimals(string[] animals)
+        {
+            Console.WriteLine("Velg et dyr:");
+            for (int i = 0; i < animals.Length; i++)
+            {
+                Console.WriteLine($"{i} - {animals[i]}");
+            }
+        }
+
         public void AnimalPicker()
         {
             string[] animals = new string[] { "Hund", "Katt", "Mus", "Fisk" };
@@ -22,15 +31,6 @@ namespace CodeAlong_Emne3
                     break;
 
                 Console.WriteLine($"{sound}\n");
-            }
-        }
-
-        private void PrintAnimals(string[] animals)
-        {
-            Console.WriteLine("Velg et dyr:");
-            for (int i = 0; i < animals.Length; i++)
-            {
-                Console.WriteLine($"{i} - {animals[i]}");
             }
         }
 
